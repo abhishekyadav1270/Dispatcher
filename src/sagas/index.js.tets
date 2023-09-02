@@ -1,0 +1,65 @@
+import { takeEvery } from 'redux-saga/effects'
+
+const handleNewMessage = function* handleNewMessage(params) {
+  yield takeEvery('COMMUNICATION/SEND_TEXT_MESSAGE', (data) => {
+    console.log('SEND_TEXT_MESSAGE', data.message)
+    params.socket.send(data.message)
+  })
+
+  yield takeEvery('COMMUNICATION/SEND_TEXT_MESSAGE_STATE', (data) => {
+    console.log('SEND_TEXT_MESSAGE_STATE', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('COMMUNICATION/SEND_INDIVIDUAL_CALL', (data) => {
+    console.log('SEND_INDIVIDUAL_CALL', data.call)
+    params.socket.send(data.call)
+  })
+
+  yield takeEvery('COMMUNICATION/SEND_INDIVIDUAL_CALL_ACTION', (data) => {
+    console.log('SEND_INDIVIDUAL_CALL_ACTION', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('COMMUNICATION/SEND_GROUP_CALL', (data) => {
+    console.log('SEND_GROUP_CALL', data.call)
+    params.socket.send(data.call)
+  })
+
+  yield takeEvery('COMMUNICATION/SEND_GROUP_CALL_ACTION', (data) => {
+    console.log('SEND_GROUP_CALL_ACTION', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('COMMUNICATION/ADD_DISCREET_SUBSCRIBER', (data) => {
+    console.log('ADD_DISCREET_SUBSCRIBER', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('COMMUNICATION/REMOVE_DISCREET_SUBSCRIBER', (data) => {
+    console.log('REMOVE_DISCREET_SUBSCRIBER', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('ALARM/ACKNOWLEDGE_STATUS', (data) => {
+    console.log('ALARM/ACKNOWLEDGE_STATUS', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('ALARM/IGNORE_STATUS', (data) => {
+    console.log('ALARM/IGNORE_STATUS', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('ALARM/SEND_STATUS', (data) => {
+    console.log('ALARM/SEND_STATUS', data.data)
+    params.socket.send(data.data)
+  })
+
+  yield takeEvery('AUTH/LOGOUT', () => {
+    console.log('LOGOUT')
+    params.socket.close()
+  })
+}
+
+export default handleNewMessage

@@ -1,0 +1,111 @@
+JavaScript Object Notation: application/json
+    Object
+        Member Key: authToken
+            String value: LMr76p0ogE9vAbfyTlYTmg
+            Key: authToken
+        Member Key: message
+            String value: authentication successful!
+            Key: message
+        Member Key: user
+            Object
+                Member Key: role
+                    Object
+                        Member Key: name
+                            String value: SUPER_USER
+                            Key: name
+                        Member Key: accesses
+                            Array
+                            Key: accesses
+                        Member Key: id
+                            Number value: 1
+                            Key: id
+                        Member Key: created
+                            String value: Mar 6, 2019 1:47:51 PM
+                            Key: created
+                        Member Key: updated
+                            String value: Mar 6, 2019 1:47:51 PM
+                            Key: updated
+                        Member Key: createdBy
+                            String value: admin
+                            Key: createdBy
+                        Member Key: updatedBy
+                            String value: admin
+                            Key: updatedBy
+                    Key: role
+                Member Key: subscriber
+                    Object
+                        Member Key: flags
+                            Number value: 223
+                            Key: flags
+                        Member Key: pinCode
+                            String value: 1234
+                            Key: pinCode
+                        Member Key: subscriberId
+                            String value: 4000
+                            Key: subscriberId
+                        Member Key: available
+                            True value
+                            Key: available
+                        Member Key: active
+                            True value
+                            Key: active
+                        Member Key: configFlag
+                            True value
+                            Key: configFlag
+                        Member Key: subscriberType
+                            String value: APPLICATION
+                            Key: subscriberType
+                        Member Key: description
+                            String value: LAB Dispatcher
+                            Key: description
+                        Member Key: userNumber
+                            String value: 4000
+                            Key: userNumber
+                        Member Key: profileNumber
+                            String value: 1
+                            Key: profileNumber
+                        Member Key: discreetSubscribers
+                            Array
+                            Key: discreetSubscribers
+                        Member Key: id
+                            Number value: 1
+                            Key: id
+                        Member Key: created
+                            String value: Feb 14, 2020 11:57:08 AM
+                            Key: created
+                        Member Key: updated
+                            String value: Feb 14, 2020 11:57:08 AM
+                            Key: updated
+                        Member Key: createdBy
+                            String value: admin
+                            Key: createdBy
+                        Member Key: updatedBy
+                            String value: admin
+                            Key: updatedBy
+                    Key: subscriber
+                Member Key: name
+                    String value: 4000
+                    Key: name
+                Member Key: password
+                    String value: 4000
+                    Key: password
+                Member Key: userCustomMessageTexts
+                    Array
+                    Key: userCustomMessageTexts
+                Member Key: id
+                    Number value: 1
+                    Key: id
+                Member Key: created
+                    String value: Mar 4, 2019 3:41:06 PM
+                    Key: created
+                Member Key: updated
+                    String value: Mar 4, 2019 3:41:06 PM
+                    Key: updated
+                Member Key: createdBy
+                    String value: admin
+                    Key: createdBy
+                Member Key: updatedBy
+                    String value: admin
+                    Key: updatedBy
+            Key: user
+

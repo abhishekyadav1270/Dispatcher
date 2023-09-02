@@ -1,0 +1,8 @@
+{
+    "app":{
+        "host": "192.168.1.50",
+        "tisHost":"192.168.1.36",
+        "drachtioHost":"127.0.0.1",
+        "dummyAdmin":true
+    }
+}

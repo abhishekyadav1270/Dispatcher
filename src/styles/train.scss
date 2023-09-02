@@ -1,0 +1,150 @@
+@import "theme";
+
+#train{
+  height: 85vh;
+  overflow-y: auto;
+  .compass{
+    position: absolute;
+    right: 35px;
+    top: 75px;
+    height: 60px;
+  }
+}
+.train-popup{
+  text-align: center;
+  background: $dark-grey !important;
+  &:before{
+    background: $dark-grey !important;
+  }
+  .name{
+    color: $orange;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  .action{
+    color: white !important;
+    padding: 10px 0 5px 0;
+    font-size: 13px;
+    opacity: 0.9;
+    text-align: left;
+    &:hover{
+      opacity: 1;
+      font-weight: 500;
+    }
+    img.ui.image{
+      display: inline-block;
+      height: 15px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.hotkey-popup{
+  text-align: center;
+  padding:12px 14px 12px 12px;
+  background: #C7FCEB !important;
+  &:before{
+    background: #C7FCEB !important;
+  }
+}
+
+.action-popup{
+  text-align: center;
+  padding:0px 0px 0px 0px;
+  background: #FFD78D !important;
+  &:before{
+    background: #FFD78D !important;
+  }
+}
+
+//Depo Css
+.grid-layout{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  // grid-gap: 1em;
+}
+
+.train-card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #dddddd!important;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+  margin:5px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+//Plot Track
+
+.track-circuit{
+  flex-direction: row;
+}
+
+// .plot-line-north{
+//   border-radius: 10px;
+//   background-color: #FFEBC8 ;
+//   padding: 2px 2px;
+//   width: auto;
+//   display: flex;
+//   padding-left: 80px;
+//   padding-right: 80px;
+// }
+
+// .plot-line-south{
+//   border-radius: 10px;
+//   background-color: #FFD78D;
+//   padding: 2px 2px;
+//   width: auto;
+//   display: flex;
+//   padding-left: 80px;
+// }
+
+// .midTrackView{
+//   border-radius: 5px;
+//   background-color: #FFEBC8 ;
+//   padding: 2px 2px;
+//   width: auto;
+//   display: flex;
+// }
+
+.trackCircuits{
+  background-color: #FFEBC8 ;
+  padding: 2px 0px;
+  height: 18px;
+  display: flex;
+}
+
+.trackCircuits-south{
+  background-color: #FFD78D;
+  padding: 2px 0px;
+  height: 18px;
+  display: flex;
+}
+
+.arrowleft{
+  position: absolute;
+  margin-top: 40px;
+}
+
+.depo-div{
+  display: flex;
+  justify-content: center!important;
+}
+
+// .plot-stn{
+//   background-color: #ffc14d61;
+//   width: 14px;
+//   margin-top: 18px;
+//   position: absolute;
+//   height: 90px;
+//   display: flex;
+//   align-items: center;
+//   align-content: center;
+//   justify-content: center;
+//   overflow: visible;
+// }

@@ -1,0 +1,6 @@
+npm install --save ws
+
+remove node_modules
+yarn
+node server/index.js
+yarn start

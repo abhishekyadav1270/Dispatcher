@@ -1,0 +1,46 @@
+@import "theme";
+
+#fence{
+  .add-btn{
+    position: absolute;
+    top: 65px;
+    right: 60px;
+    z-index: 999;
+  }
+  .action-items{
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #ffffffdb;
+    padding: 30px 0;
+    input{
+      width: 300px;
+    }
+    button{
+      margin: 0 10px;
+      width: 120px;
+    }
+  }
+  .delete-icon{
+    z-index: 99999999999;
+    position: absolute;
+    background: #1c1d1e;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .title{
+    z-index: 99999999999;
+    position: absolute;
+    top: -25px;
+    padding: 5px;
+    border-radius: 5px;
+    width: auto;
+    min-width: 60px;
+    text-align: center;
+    background: #1c1d1e;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

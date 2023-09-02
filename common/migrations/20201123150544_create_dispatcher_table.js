@@ -1,0 +1,89 @@
+
+exports.up = function(knex) {
+  return knex.schema
+  .createTable('sdsAlerts',(t)=>{
+    t.increments('alertId').primary();
+    t.string('id');
+    t.string('tetraCode',100);  
+    t.string('fromId');  
+    t.string('toId'); 
+    t.string('groupId'); 
+    t.string('sdsType');       
+    t.string('communicationType');  
+    t.timestamp('created');   
+    t.string('stateType');  
+    t.boolean('pinned'); 
+    t.index(['toId','fromId'],'alertIndex');  
+  })
+  .createTable('favContacts',(t)=>{
+    t.increments('favId').primary();
+    t.string('mcptt_id')
+    t.string('dispatcher_id');
+    t.string('contactName');
+    t.string('tetra_id');      
+  })
+  .createTable('sdsMessages',(t)=>{
+    t.increments('msgId').primary();
+    t.string('id');
+    t.string('messageId');
+    t.string('message',500);
+    t.boolean('immediate');
+    t.boolean('consumedReportNeeded');
+    t.boolean('deliveryReportNeeded');   
+    t.string('fromId');  
+    t.string('toId'); 
+    t.string('groupId'); 
+    t.string('sdsType');       
+    t.string('communicationType');
+    t.string('requestId');   
+    t.timestamp('created');  
+    t.timestamp('read_at');  
+    t.string('stateType');
+    t.string('messageType');
+    t.string('fileId'); 
+    t.boolean('view').defaultTo(false); 
+    t.string('creatorId');
+    t.index(['toId','fromId','creatorId'],'sdsIndex');
+  })
+  .createTable('calls',(t)=>{
+    t.increments('id').primary();
+    t.string('callId');
+    t.string('indexId'); 
+    t.string('fromId');  
+    t.string('toId'); 
+    t.string('groupId'); 
+    t.string('callType');       
+    t.string('communicationType');
+    t.string('callPriority');
+    t.string('callActionType');
+    t.timestamp('created');  
+    t.string('stateType');
+    t.index(['toId','fromId'],'callIndex');   
+  })
+  .createTable('attachedDGNA',(t)=>{
+    t.increments('dgId').primary();
+    t.string('dispatcher_id')
+    t.string('dgnaGroupId');
+    t.string('name');
+    t.integer('color');
+    t.string('grpMembers',1000);       
+    t.boolean('attached'); 
+  })
+  .createTable('savedUserLists',(t)=>{
+    t.increments('id').primary();
+    t.string('dispatcher_id')
+    t.string('name');
+    t.string('grpMembers',1000);
+  })
+  .createTable('sdsFiles',(t)=>{
+    t.string('fileId').primary();
+    t.string('fileName');
+    t.string('fileType');
+    t.string('filePath'); 
+  })
+};
+
+exports.down = function(knex) {
+//   return knex.schema
+//   .dropTa
+};

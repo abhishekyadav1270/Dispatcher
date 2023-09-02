@@ -1,0 +1,70 @@
+.dialpad-input {
+    border: none;
+    float: left;
+    display: flex;
+    width: 42%;
+    font-size: 20px;
+    min-height: 38px;
+    color: '#4d4d4d';
+    padding-left: 6px;
+    margin-right: 3px;
+    border-radius: 6px;
+}
+
+.dailer-reset {
+    /* padding: 5px 14px; */
+    font-weight: bold;
+    float: right;
+    text-align: right;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 12%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.dialpad-wrapper {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #1d1918;
+    font-family: muli;
+    user-select: none;
+    margin-top: 10px;
+}
+
+.dialpad-list {
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+}
+
+.dialpad-button-wrapper {
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.dialer-button-text {
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 10px;
+    margin: 0rem;
+    align-self: center;
+}
+
+.dialer-button-alias {
+    text-transform: uppercase;
+    color: #c1c1c1;
+    font-size: 60%;
+}

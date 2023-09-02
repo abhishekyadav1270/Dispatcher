@@ -1,0 +1,175 @@
+@import "theme";
+
+#communication{
+  img.ui.image{
+    height: 38px;
+    width: 38px;
+  }
+  .slider{
+    max-width: 85px !important;
+    height: 100vh;
+    background: $light-black;
+    padding-top: 0 !important;
+    position: absolute;
+    top: 64px;
+    .ui.button{
+      min-height: 4em;
+      border-bottom: 1px solid #333;
+    }
+    // sidebar icons
+    .ui.image{
+      height: 24px;
+    }
+  }
+  .ui.pushable{
+    height: 100vh;
+    margin-left: 85px;
+    margin-top: 0px;
+  }
+  // sidebar
+  .ui.sidebar{
+    width: 410px;
+    .ui.form{
+      label{
+        text-align: left !important;
+      }
+    }
+    .search{
+      margin-bottom: 25px;
+    }
+    .ui.search.dropdown{
+      margin-bottom: 0;
+    }
+    .button{
+      background: $orange;
+      margin-bottom: 25px;
+      color: white;
+      width: 100%;
+    }
+    .floated-row{
+      background: white;
+      border-radius: 5px;
+      color: black;
+      font-size: 13px;
+      padding: 12px;
+      margin: 15px 0;
+      width: 380px;
+      div{
+        display: inline-block;
+      }
+      .icons{
+        float: right;
+        img.ui.image{
+          cursor: pointer;
+          display: inline-block;
+          height: 20px;
+          margin-top: -6px;
+          &.hook{
+            height: 24px;
+            width: 24px;
+          }
+          &.wave{
+            height: 15px;
+          }
+        }
+        .icon{
+          cursor: pointer;
+          font-size: 14px;
+          margin: 0 7px;
+        }
+      }
+    }
+  }
+
+  // common
+  .ui.menu{
+    a.item{
+      border-bottom: 1px solid $orange;
+      color: #FFF;
+      cursor: pointer;
+      &.active{
+        color: $orange;
+        font-weight: 600;
+        border-width: 4px;
+      }
+    }
+  }
+  .header{
+    font-size: 1.2em;
+    &.message-heading{
+      text-align: left !important;
+      padding: 13px 0 15px 0;
+    }
+  }
+
+  // main content
+  .pusher{
+    .ui.grid{
+      height: 100vh;
+    }
+    .ui.image{
+      height: 30px;
+    }
+    .bordered{
+      border-left: 1px solid #CCC;
+      border-right: 1px solid #CCC;
+    }
+    .column{
+      overflow-y: auto;
+    }
+    .main{
+      padding: 20px 0;
+      &.padded{
+        padding-left: 20px;
+      }
+      .sub-heading{
+        padding: 40px 0 10px 0;
+        color: #666;
+        font-size: 14px;
+      }
+      .ui.menu{
+        .item{
+          color: #666;
+          &.active{
+            color: $orange;
+          }
+        }
+      }
+      .speaker{
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        img{
+          height: 25px;
+          margin-top: -7px;
+          width: 25px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .ambient{
+    background: #EEE;
+  } 
+}
+
+.ui.popup{
+  .set-priority{
+    font-size: 13px;
+    min-width: 100px;
+    h5{
+      font-weight: bold;
+    }
+    .ico{
+      cursor: pointer;
+      margin: 5px 0;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+  .merge-select.ui.dropdown{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,189 @@
+@import "theme";
+
+body, h5, .ui {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1em;
+}
+.full-height-width{
+  height: 100vh;
+  width: 100%;
+}
+.disabled{
+  opacity: 0.1 !important;
+  pointer-events: none !important;
+}
+.pointer{
+  cursor: pointer;
+}
+.ui.modals{
+  z-index: 999999;
+}
+.ui.modal{
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pointer{
+  cursor: pointer;
+}
+hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #CCC;
+  background-image: linear-gradient(to right, #EEE, #CCC, #EEE);
+}
+.abs{
+  font-size: 13px;
+  color: #666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+// colors
+.green{
+  color: $green !important;
+}
+.red{
+  color: $red !important;
+}
+.orange{
+  color: $orange !important;
+}
+.blue{
+  color: $blue !important;
+}
+
+// card
+.ui.segment.card{
+  font-size: 14px;
+  padding: 10px;
+  &.group{
+    background: #F7F7F7;
+  }
+  &.halved{
+    display: inline-block;
+    width: 46%;
+    margin-right: 2%;
+    vertical-align: top;
+    margin-top: 0;
+    img.ui.image{
+      height: 18px !important;
+    }
+  }
+  &.float{
+    display: inline-block;
+    width: 23%;
+    margin-right: 2%;
+  }
+  .discreet{
+    img.ui.image{
+      display: inline;
+      height: 16px !important;
+    }
+  }
+  .name{
+    font-weight: 600;
+    padding: 5px 0;
+    .icon{
+      margin-left: 10px;
+    }
+  }
+  .notice{
+    font-size: 13px;
+    padding: 5px 0 15px 0;
+  }
+  .status{
+    font-size: 13px;
+    padding: 10px 0 15px 0; 
+    position: relative;
+    padding-right: 65px;
+    .delivery-status{
+      position: absolute;
+      color: #888;
+      right: 5px;
+    }
+    img{
+      display: inline-block;
+      height: 20px !important;
+    }
+  }
+  .abs{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .ui.buttons{
+    width: 100%;
+    .button{
+      font-size: 12px;
+      width: 33.3%;
+      &.four{
+        width: 25%;
+      }
+      &.five{
+        width: 20%;
+      }
+      &.two{
+        width: 50%;
+      }
+    }
+  }
+  .ui.button{
+    width: 100%;
+    background: $light-black;
+    color: white;
+  }
+  button img.ui.image{
+    display: inline-block;
+    height: 18px !important;
+  }
+}
+
+div[title="Stop drawing"] {
+  height: 40px;
+  width: 115px;
+  cursor: pointer;
+  padding-top: 20px !important;
+  text-align: center !important;
+  color: white !important;
+  background: black !important;
+  font-size: 12px !important;
+  &[aria-pressed="false"]{
+    color: #CCC !important;
+  }
+  span{
+    display: none !important;
+  }
+  &:after{
+    content: 'Stop Drawing'
+  }
+}
+
+div[title="Draw a shape"] {
+  height: 40px;
+  width: 115px;
+  cursor: pointer;
+  padding-top: 20px !important;
+  text-align: center !important;
+  color: white !important;
+  background: black !important;
+  font-size: 12px !important;
+  &[aria-pressed="false"]{
+    color: #CCC !important;
+  }
+  span{
+    display: none !important;
+  }
+  &:after{
+    display: inline-block;
+    vertical-align: middle;
+    content: 'Draw New Fence'
+  }
+}

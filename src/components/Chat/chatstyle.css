@@ -1,0 +1,468 @@
+
+.chat-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+     /* overflow-y: scroll; */
+    /* height: 500px; */
+    background-color: #2D2D2E;
+    min-width: 366px;
+    width: inherit;
+}
+
+
+.inner-chat{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    /* overflow: auto; */
+    overflow-y: scroll;
+    /* background-color: #2D2D2E; */
+    background-color: rgba(255, 255, 255, 0.0);
+    box-shadow: #121212 -1px 0px 0px 2px inset;
+}
+
+/* #scrollableDiv{
+  overflow-y: scroll;
+  height: 400px;
+} */
+    
+.blue-bubble-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5;
+    max-width: 60%;
+    background: #ffb01f;
+    color: black;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+  .grey-bubble-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5;
+    max-width: 60%;
+    background: #ebeae8;
+    color: black;
+    padding: 16px;
+    border-radius: 16px;
+}
+.blue-bubble-img-chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  /* background: #1661AD; */
+  background: #67686a;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.grey-bubble-img-chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: #929292;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.dilivery-in-chat-from-me {
+    font-size: 10px;
+    margin: 6px ;
+    margin-right: 20px;
+    color: green;
+    margin-bottom: 5px;
+    text-align:right ;
+}
+
+.dilivery-in-chat-from-them {
+  font-size: 10px;
+  margin: 6px ;
+  color: green;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  text-align:left ;
+}
+  /* .date-color-in-chat-from-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    color: gray;
+    margin-bottom: 5px;
+    margin-right: 12px;
+    font-size: 10px; 
+  }
+  .date-color-in-chat-from-them {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: gray;
+    text-align:left;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    font-size: 10px;
+  } */
+
+  .date-color-in-chat-from-me {
+    color: gray;
+    font-size: 10px; 
+  }
+  .date-color-in-chat-from-them {
+    color: gray;
+    font-size: 10px;
+  } 
+
+  .userId-show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    text-align:left;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .add-button-in-chat {
+    background-color: #1661AD;
+    color: white;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+  
+  .from-me-in-chat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .from-them-in-chat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  /* .input-in-chat {
+    width: calc(100% - 160px) ; 
+    height: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #303035;
+  } */
+  /* .input-View {
+    width: 100%;
+    background-color: #EDF1F7;
+    border-color: #E4E9F2;
+  } */
+
+  .input-in-chat{
+    /* width: calc(100% - 84px); */
+    width: 98%;
+    height: 70%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #303035;
+    background: #141417;
+    color: white;
+  }
+
+  .input-View {
+    background-color: rgba(255, 255, 255, 0.09) !important;
+    width: 100%;
+    height: 58px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    padding: 0px 5px;
+  }
+  
+
+  .chat-date-view {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chat-date-header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 30, 31);
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    border-radius: 20px;
+  }
+
+  .audio-btn-view {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+  .audio-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .player-view {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 img {
+    object-fit: cover;
+}
+
+  /* inside circle with for plus*/
+  .circle{
+    border:3px solid #1661AD;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    position:relative;
+    margin:4px;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .circle.plus:before,
+  .circle.plus:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #1661AD;
+  }
+  
+  .circle.plus:before{
+      width: 2px;
+      margin: 2px auto;
+  }
+  .circle.plus:after{
+      margin: auto 2px;
+      height: 2px;
+  }
+  /* plus button end*/
+
+
+  /* mic record css start*/
+.mic {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 16px;
+  height: 12px;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  border: 2px solid;
+  border-top: 0;
+  margin-top: 3px
+}
+.mic::after,
+.mic::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+}
+.mic::after {
+  border: 2px solid;
+  width: 8px;
+  height: 18px;
+  left: 2px;
+  top: -10px;
+  border-radius: 4px
+}
+.mic::before {
+  width: 10px;
+  height: 4px;
+  top: 12px;
+  left: 1px;
+  border-right: 4px solid transparent;
+  box-shadow:
+      0 2px 0,
+      inset -2px 0 0
+}
+
+/* mic record end*/
+
+/* stop recording css start*/
+.play-stop {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 4px
+}
+.play-stop::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 6px;
+  left: 6px;
+  background: currentColor
+}
+
+/* stop recording end */
+
+/* open camera css start*/
+.camera-open {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  border: 2px solid;
+  border-radius: 3px;
+  width: 18px;
+  height: 12px;
+  perspective: 24px
+}
+.camera-open::after,
+.camera-open::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+}
+.camera-open::before {
+  border: 2px solid;
+  border-left-color: transparent;
+  transform: rotateY(-70deg);
+  width: 8px;
+  height: 8px;
+  right: -7px;
+  top: 0
+}
+.camera-open::after {
+  width: 10px;
+  height: 5px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  top: -5px;
+  right: 2px;
+  border-top-right-radius: 2px
+}
+
+/* open camera end */
+
+/* capture image css start */
+
+.capture_img {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  transform: scale(var(--ggs,1))
+}
+.capture_img::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  box-shadow:
+      -5px -5px 0 -3px,
+      5px 5px 0 -3px,
+      5px -5px 0 -3px,
+      -5px 5px 0 -3px;
+  left: -5px;
+  top: -5px
+}
+/* capture image  end */
+
+
+/* browse file css start */
+.browser-file {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 24px;
+  height: 18px;
+  background: blue;
+  border: 2px solid;
+  border-radius: 3px
+}
+.browser-file::after,
+.browser-file::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  top: 4px
+}
+.browser-file::after {
+  border-radius: 3px;
+  width: 2px;
+  box-shadow:
+      3px 0 0,
+      6px 0 0;
+  top: 1px;
+  left: 1px
+}
+/* browse file css end */
+

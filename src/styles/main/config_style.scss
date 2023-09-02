@@ -1,0 +1,505 @@
+//CSD mmrda and nagpur diff config
+@import 'nagpur_config';
+// @import "mmrda_config";
+
+body {
+  background-color: $main_wrap;
+  font-family: "Muli";
+}
+
+.main-nav-body {
+  height: 1025px;
+  background-color: $bg_clr;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.wrap-1 {
+  background-color: $wrap;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.textinput {
+  border-radius: 4px;
+  border: 0px;
+  color: white;
+  background-color: $inputClr;
+  padding: 4px 8px 4px 12px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 -1px 1px $shadow1,
+    0 1px 0 $shadow2 !important;
+}
+
+.plot-line-north {
+  border-radius: 10px;
+  background-color: $plotClr;
+  padding: 2px 2px;
+  width: auto;
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.plot-line-south {
+  border-radius: 10px;
+  background-color: $plotClr2;
+  padding: 2px 2px;
+  width: auto;
+  display: flex;
+  padding-left: 80px;
+}
+
+.midTrackView {
+  border-radius: 5px;
+  background-color: $midTrackClr;
+  padding: 2px 2px;
+  width: auto;
+  display: flex;
+}
+
+.plot-stn {
+  background-color: $stnClr;
+  width: 14px;
+  margin-top: 18px;
+  position: absolute;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.stn-tag {
+  background-color: $stnTag;
+  color: white;
+  font-family: "Muli";
+  // width: 50px !important;
+  text-align: center;
+  // line-height: 130%;
+  cursor: pointer;
+  // padding: 3px 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link .nav-item.active {
+  color: white !important;
+  background-color: $navLink;
+}
+
+.dgna-card {
+  display: grid;
+  /* grid-template-columns: 24px 1fr; */
+  grid-template-columns: 24px 1fr 0.2fr 0.2fr;
+  grid-template-rows: auto;
+  gap: 8px 4px;
+  /* background-color: $dgna_bg; */
+  color: $dgna_font;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 6px 8px 12px;
+  grid-template-areas: ". . . .";
+}
+
+.dgna-card.unattached {
+  background-color: $dg_unattach;
+  opacity: 0.8;
+}
+
+.dgna-card.attached {
+  background-color: $dg_attach;
+}
+
+.screen-tab-option:hover {
+  color: white;
+}
+
+.bg-active-color {
+  background: $bg_active;
+}
+
+.tab-color {
+  color: white;
+}
+
+.changing-dot {
+  background-color: $div_dot;
+}
+
+.fill-changing {
+  stroke: $fill_chang;
+}
+
+.fill-siding {
+  stroke: $fill-slide;
+}
+
+//Extra
+.f-orange {
+  color: #ffb01f !important;
+}
+
+.dot {
+  // display: inline-block;
+   background-color: #353535;
+  // height: 3px;
+  // width: 5px;
+  /* border-radius: 50%; */
+  // margin: 5px;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-train-map {
+  background-color: #ffffff26;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+//   style diff
+
+.btn-rgba-quick-link {
+  color: #ffffff;
+  background-color: $btn_rgba;
+}
+
+.btn-rgba-quick-link:hover {
+  background-color: $btn_rgba_3;
+}
+
+.btn-rgba-quick-link:focus {
+  background-color: $btn_rgba_3;
+}
+
+.btn-rgba-quick-link.active {
+  background-color: $btn_rgba;
+}
+
+.btn-rgba-quick-link .disabled {
+  opacity: 0.3;
+  background-color: $btn_rgba_dis;
+  border-color: $btn_rgba_dis;
+}
+
+.btn-rgba-quick-link:disabled {
+  opacity: 0.3;
+  background-color: $btn_rgba_dis;
+  border-color: $btn_rgba_dis;
+}
+
+.btn-rgba-quick-link:not(:disabled):not(.disabled).active {
+  background-color: $btn_rgba_act;
+  border-color: $btn_rgba_act;
+}
+
+.btn-rgba-quick-link:not(:disabled):not(.disabled):active {
+  background-color: $btn_rgba_act;
+  border-color: $btn_rgba_act;
+}
+
+.btn-rgba-quick-link:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $btn_rgba_foc;
+  box-shadow: 0 0 0 0.2rem $btn_rgba_foc;
+}
+
+.btn-rgba-quick-link:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $btn_rgba_foc;
+  box-shadow: 0 0 0 0.2rem $btn_rgba_foc;
+}
+
+.btn-outline-el-m-dark {
+  color: $white;
+  border-color: $el-m-dark;
+}
+
+.btn-outline-el-m-dark:hover {
+  color: $bg-dark;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-outline-el-m-dark:focus {
+  color: $bg-dark;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-outline-el-m-dark.active {
+  color: $bg-dark;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-outline-el-m-dark .disabled {
+  opacity: 0.3;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-outline-el-m-dark:disabled {
+  opacity: 0.3;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-outline-el-m-dark:not(:disabled):not(.disabled).active {
+  background-color: $el-m-dark2;
+  border-color: $el-m-dark2;
+}
+
+.btn-outline-el-m-dark:not(:disabled):not(.disabled):active {
+  background-color: $el-m-dark2;
+  border-color: $el-m-dark2;
+}
+
+.btn-outline-el-m-dark:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $el-m-light;
+  box-shadow: 0 0 0 0.2rem $el-m-light;
+}
+
+.btn-outline-el-m-dark:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $el-m-light;
+  box-shadow: 0 0 0 0.2rem $el-m-light;
+}
+
+//priority button
+
+.btn-outline-el-b-dark {
+  color: #ffffff;
+  border-color: $btn_prior;
+}
+
+.btn-outline-el-b-dark:hover {
+  color: #121212 !important;
+  background-color: $btn_prior;
+  border-color: $btn_prior;
+}
+
+.btn-outline-el-b-dark:focus {
+  color: #121212 !important;
+  background-color: $btn_prior;
+  border-color: $btn_prior;
+}
+
+.btn-outline-el-b-dark.active {
+  color: #121212 !important;
+  background-color: $btn_prior;
+  border-color: $btn_prior;
+}
+
+.btn-outline-el-b-dark .disabled {
+  opacity: 0.3;
+  background-color: $btn_prior;
+  border-color: $btn_prior;
+}
+
+.btn-outline-el-b-dark:disabled {
+  opacity: 0.3;
+  background-color: $btn_prior;
+  border-color: $btn_prior;
+}
+
+.btn-outline-el-b-dark:not(:disabled):not(.disabled).active {
+  background-color: $btn_prior_act;
+  border-color: $btn_prior_act;
+}
+
+.btn-outline-el-b-dark:not(:disabled):not(.disabled):active {
+  background-color: $btn_prior_act;
+  border-color: $btn_prior_act;
+}
+
+.btn-outline-el-b-dark:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $btn_prior_foc;
+  box-shadow: 0 0 0 0.2rem $btn_prior_foc;
+}
+
+.btn-outline-el-b-dark:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $btn_prior_foc;
+  box-shadow: 0 0 0 0.2rem $btn_prior_foc;
+}
+
+//primary button
+.btn-primary {
+  color: $white;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-primary:hover {
+  background-color: $el-m-darker;
+  border-color: $el-m-darker;
+}
+
+.btn-primary:focus {
+  background-color: $el-m-darker;
+  border-color: $el-m-darker;
+}
+
+.btn-primary.active {
+  background-color: $el-m-darker;
+  border-color: $el-m-darker;
+}
+
+.btn-primary .disabled {
+  opacity: 0.3;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-primary:disabled {
+  opacity: 0.3;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: $el-m-dark2;
+  border-color: $el-m-dark2;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: $el-m-dark2;
+  border-color: $el-m-dark2;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $el-m-light;
+  box-shadow: 0 0 0 0.2rem $el-m-light;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $el-m-light;
+  box-shadow: 0 0 0 0.2rem $el-m-light;
+}
+//dropdown button
+.btn-rgba-el-m-dark {
+  color: $white;
+  background-color: $btn-rgba;
+}
+
+.btn-rgba-el-m-dark:hover {
+  background-color: $btn-rgba-dark;
+}
+
+.btn-rgba-el-m-dark:focus {
+  background-color: $btn-rgba-dark;
+}
+
+.btn-rgba-el-m-dark.active {
+  background-color: $btn-rgba;
+}
+
+.btn-rgba-el-m-dark .disabled {
+  opacity: 0.3;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-rgba-el-m-dark:disabled {
+  opacity: 0.3;
+  background-color: $el-m-dark;
+  border-color: $el-m-dark;
+}
+
+.btn-rgba-el-m-dark:not(:disabled):not(.disabled).active {
+  background-color: $el-m-dark2;
+  border-color: $el-m-dark2;
+}
+
+.btn-rgba-el-m-dark:not(:disabled):not(.disabled):active {
+  background-color: $el-m-dark2;
+  border-color: $el-m-dark2;
+}
+
+.btn-rgba-el-m-dark:not(:disabled):not(.disabled).active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $el-m-light;
+  box-shadow: 0 0 0 0.2rem $el-m-light;
+}
+
+.btn-rgba-el-m-dark:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem $el-m-light;
+  box-shadow: 0 0 0 0.2rem $el-m-light;
+}
+
+//tabs
+.tbs {
+  background-color: $tabClr;
+}
+
+.tbs:hover {
+  background-color: $wrap;
+}
+
+.tbs.active {
+  background-color: transparent !important;
+}
+
+.tab-color {
+  color: $tabsClr;
+}
+
+.screen-tab-option:hover {
+  opacity: 0.9;
+  color: $tabsClr;
+}
+
+.dispatcher-name {
+  background-color: $main_clr;
+  color: $main_textClr;
+}
+
+/* Nav Tab Starts */
+.pill-tabs {
+  padding: 4px 12px 4px 12px;
+  border-radius: 12px !important;
+  color: $sec_textClr;
+}
+.pill-tabs.active {
+  color: $main_textClr;
+  background-color: $pill-tab-act;
+  border-radius: 12px !important;
+}
+.pill-tabs:hover {
+  color: $sec_textClr;
+}
+/* Nav Tab Ends */
+
+// Colum even odd colr
+.act-row-grid:nth-of-type(even) {
+  background-color: $row-even;
+}
+
+.act-row-grid:hover {
+  background-color: $row-hov;
+  color: $row-text;
+  cursor: pointer;
+}
+
+.train-row-grid:nth-of-type(even) {
+  background-color: $row-even;
+}
+
+.train-row-grid:hover {
+  background-color: $row-hov;
+  color: $row-text;
+}
+
+.sds-card-grid {
+  background-color: $wrap
+}
+
+.msgRead {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.unread {
+  background-color: $wrap
+}

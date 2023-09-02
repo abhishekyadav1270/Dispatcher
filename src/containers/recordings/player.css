@@ -1,0 +1,32 @@
+.main-div {
+    display: flex;
+    background-color: #121212 !important;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 16px;
+    height: 1025px;
+}
+
+.w20 {
+    width: 20%;
+    background-color: aquamarine;
+}
+
+.w79_5 {
+    width: 79.5%;
+    background-color: blue;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.sub-div{
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.07)
+}
+
+.mt-5{
+    margin-top:5px !important;
+}

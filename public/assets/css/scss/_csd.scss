@@ -1,0 +1,269 @@
+@mixin btngen($btncolor,$islight) {
+
+  @if $islight {
+    color: $white;
+  } @else {
+    color:$bg-dark!important;
+  }
+
+  background-color: $btncolor!important;
+  border-color: $btncolor!important;
+  &:hover{
+    background-color: darken($btncolor, 10%)!important;
+    border-color: darken($btncolor, 10%)!important;
+  }
+  &:focus{
+    background-color: darken($btncolor, 10%)!important;
+    border-color: darken($btncolor, 10%)!important;
+  }
+  &.active{
+    background-color: darken($btncolor, 10%)!important;
+    border-color: darken($btncolor, 10%)!important;
+  }
+  .disabled {
+    opacity: 0.3;
+    background-color: $btncolor;
+    border-color: $btncolor;
+  }
+  &:disabled {
+    opacity: 0.3;
+    background-color: $btncolor;
+    border-color: $btncolor;
+  }
+  &:not(:disabled) {
+    &:not(.disabled).active {
+      background-color: darken($btncolor, 5%);
+      border-color: darken($btncolor, 5%);
+    }
+    &:not(.disabled) {
+      &:active {
+        background-color: darken($btncolor, 5%);
+        border-color: darken($btncolor, 5%);
+      }
+    }
+  }
+  &:not(:disabled) {
+    &:not(.disabled).active {
+      &:focus {
+        box-shadow: 0 0 0 0.2rem lighten($btncolor, 20%);
+      }      
+    }
+    &:not(.disabled) {
+      &:active {
+        &:focus {
+          box-shadow: 0 0 0 0.2rem lighten($btncolor, 20%);
+        }        
+      }
+    }
+  }
+}
+
+@mixin outline-btngen($btncolor,$islight) {
+  
+    color: $white;
+  border-color: $btncolor!important;
+  &:hover{
+    color: $bg-dark!important;
+    background-color: $btncolor!important;
+    border-color: $btncolor!important;
+  }
+  &:focus{
+    color: $bg-dark!important;
+    background-color: $btncolor!important;
+    border-color: $btncolor!important;
+  }
+  &.active{
+    color: $bg-dark!important;
+    background-color:  $btncolor!important;
+    border-color:  $btncolor!important;
+  }
+  .disabled {
+    opacity: 0.3;
+    background-color: $btncolor;
+    border-color: $btncolor;
+  }
+  &:disabled {
+    opacity: 0.3;
+    background-color: $btncolor;
+    border-color: $btncolor;
+  }
+  &:not(:disabled) {
+    &:not(.disabled).active {
+      background-color: darken($btncolor, 5%);
+      border-color: darken($btncolor, 5%);
+    }
+    &:not(.disabled) {
+      &:active {
+        background-color: darken($btncolor, 5%);
+        border-color: darken($btncolor, 5%);
+      }
+    }
+  }
+  &:not(:disabled) {
+    &:not(.disabled).active {
+      &:focus {
+        box-shadow: 0 0 0 0.2rem lighten($btncolor, 20%);
+      }      
+    }
+    &:not(.disabled) {
+      &:active {
+        &:focus {
+          box-shadow: 0 0 0 0.2rem lighten($btncolor, 20%);
+        }        
+      }
+    }
+  }
+}
+
+@mixin rgba-btngen($btncolor,$islight) {
+
+  @if $islight {
+    color: $white;
+  } @else {
+    color: $bg-dark!important;
+  }
+
+  background-color: rgba($btncolor, 0.4);
+  // border-color: $btncolor!important;
+  &:hover{
+    background-color: rgba($btncolor, 0.3);
+    // border-color: darken($btncolor, 10%)!important;
+  }
+  &:focus{
+    background-color: rgba($btncolor, 0.3);
+    // border-color: darken($btncolor, 10%)!important;
+  }
+  &.active{
+    background-color: rgba($btncolor, 0.4);
+    // border-color: darken($btncolor, 10%)!important;
+  }
+  .disabled {
+    opacity: 0.3;
+    background-color: $btncolor;
+    border-color: $btncolor;
+  }
+  &:disabled {
+    opacity: 0.3;
+    background-color: $btncolor;
+    border-color: $btncolor;
+  }
+  &:not(:disabled) {
+    &:not(.disabled).active {
+      background-color: darken($btncolor, 5%);
+      border-color: darken($btncolor, 5%);
+    }
+    &:not(.disabled) {
+      &:active {
+        background-color: darken($btncolor, 5%);
+        border-color: darken($btncolor, 5%);
+      }
+    }
+  }
+  &:not(:disabled) {
+    &:not(.disabled).active {
+      &:focus {
+        box-shadow: 0 0 0 0.2rem lighten($btncolor, 20%);
+      }      
+    }
+    &:not(.disabled) {
+      &:active {
+        &:focus {
+          box-shadow: 0 0 0 0.2rem lighten($btncolor, 20%);
+        }        
+      }
+    }
+  }
+}
+
+.main-nav-body{
+    // height: 1138px;
+    background-color: $bg-dark!important;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  .wrap-1{
+    background-color: $bg-mild!important;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .fav-card-grid2{
+    background-color: $bg-mild!important;
+  }
+
+  .tbs{
+    background-color: $bg-dark!important;
+  }
+
+  .tbs:hover{
+    background-color: $bg-mild!important;
+  }
+  .tbs.active{
+    background-color: transparent!important;
+  }
+
+  .sds-card-grid{
+    background-color: $bg-mild!important;
+  }
+
+  .act-row-grid:nth-of-type(even){
+    background-color: $bg-dark!important;
+  }
+
+  .act-row-grid:hover{
+    background-color: lighten($orange, 0.2)!important;
+    color: $bg-dark
+  }
+
+  .train-row-grid:nth-of-type(even){
+    background-color: $bg-dark!important;
+  }
+
+  .train-row-grid:hover{
+    background-color: lighten($orange, 0.2)!important;
+    color: $bg-dark;
+  }
+
+  .pill-tabs.active{
+    background-color: $orange!important;
+    color: $bg-dark!important;
+  }
+
+  .dispatcher-name{
+    background-color: $orange!important;
+    color: $bg-dark!important;
+  }
+
+  .dgna-card{
+    background-color: $orange!important;
+    color: $bg-dark!important;
+  }
+
+  .to-do-item{
+    background-color: $orange!important;
+    color: $bg-dark!important;
+  }
+  .arrow-icon{
+    background-color: $orange!important;
+  }
+
+  .btn-rounded{
+    border-radius: 50px!important;
+  }
+  
+  .btn-circle{
+    border-radius: 50%!important;
+  }
+
+  @each $coln,$colc in $allbtn {
+    .btn-#{$coln}{
+      @include btngen($colc,true)
+    }
+    .btn-rgba-#{$coln} {
+      @include rgba-btngen($colc,true)
+    }
+    .btn-outline-#{$coln}{
+      @include outline-btngen($colc,true)
+    }
+  }

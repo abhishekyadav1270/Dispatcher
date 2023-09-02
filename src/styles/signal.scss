@@ -1,0 +1,17 @@
+@import "theme";
+
+.signal{
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #DDD;
+  border-radius: 50%;
+  background: #EEE;
+  margin-right: 7px;
+  &.green{
+    background: $green;
+  }
+  &.red{
+    background: red;
+  }
+}

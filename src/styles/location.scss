@@ -1,0 +1,80 @@
+@import "theme";
+
+.trail{
+  border: 3px solid #000;
+  height: 3px;
+  width: 3px;
+  &.circle{
+    border-radius: 50%;
+    border-width: 6px;
+  }
+}
+
+.location-marker{
+  position: absolute;
+  bottom: 0;
+  left: -32px;
+  .label{
+    background: $marker-color;
+    font-size: 11px;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    left: 50%;
+    position: absolute;
+    top: -22px;
+    transform: translateX(-50%);
+    margin-left: 3px;
+  }
+  .marker{
+    font-size: 44px;
+    margin-left: 6px;
+    max-width: 43px !important;
+  }
+  .wifi{
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 16px;
+    font-size: 16px;
+  }
+}
+.marker-popup{
+  text-align: center;
+  background: $dark-grey !important;
+  &:before{
+    background: $dark-grey !important;
+  }
+  .label{
+
+  }
+  .name{
+    color: $orange;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  .action{
+    color: white !important;
+    padding: 10px 0 5px 0;
+    font-size: 13px;
+    opacity: 0.9;
+    text-align: left;
+    &:hover{
+      opacity: 1;
+      font-weight: 500;
+    }
+    img.ui.image{
+      display: inline-block;
+      height: 15px;
+      margin-right: 4px;
+    }
+  }
+}
+.send-message-modal{
+  textarea{
+    width: 100%;
+  }
+  .btn-container{
+    text-align: center;
+  }
+}

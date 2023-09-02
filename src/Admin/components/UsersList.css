@@ -1,0 +1,76 @@
+.single-user-row-grid-head {
+    display: grid;
+    grid-template-columns:  1fr 3fr 3fr 3fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 2px 0px;
+    padding: 16px 8px;
+    color: white;
+    /* height: 30px; */
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: rgb(255,255,255,0.1);
+    padding: 10px 4px 10px 12px;
+    margin-top: 16px;
+    /* background-color: #232a77; */
+    align-content:center;
+    text-transform: uppercase;
+    font-size: 18px;
+   grid-template-areas: "r-tb-icon tr-tb-uname tr-tb-uid tr-tb-mxid tr-tb-edit tr-tb-delete"
+  }
+  
+  .group-user-row-grid-head {
+    display: grid;
+    grid-template-columns:  1fr 3fr 3fr 3fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 2px 0px;
+    padding: 16px 8px;
+    color: white;
+    /* height: 30px; */
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: rgb(255,255,255,0.1);
+    padding: 10px 4px 10px 12px;
+    margin-top: 16px;
+    /* background-color: #232a77; */
+    align-content:center;
+    text-transform: uppercase;
+    font-size: 52;
+    grid-template-areas: "tr-tb-icon tr-tb-gname tr-tb-gid tr-tb-members tr-tb-edit tr-tb-delete"
+  }
+
+  .user-row-grid:nth-of-type(even) {
+    display: grid;
+    /* grid-template-columns: 30px 30px 1fr 1fr 1fr 1.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr; */
+    grid-template-rows: 1fr;
+    gap: 2px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    align-content: center;
+    background-color: #232a77af;
+    padding: 12px 4px 12px 12px;
+    color: white;
+   /* grid-template-areas: "tr-tb-cb tr-tb-no tr-tb-tid tr-tb-pt-id tr-tb-r-id tr-tb-group tr-tb-act-cab tr-tb-ops tr-tb-line tr-tb-aoc tr-tb-dir tr-tb-c-id" */
+  }
+
+  .r-tb-icon { grid-area: r-tb-icon; }
+
+  .tr-tb-uname { grid-area: tr-tb-uname ; }
+  
+  .tr-tb-uid{ grid-area: tr-tb-uid; }
+  
+  .tr-tb-mxid { grid-area: tr-tb-mxid ; }
+  
+  .tr-tb-edit  { grid-area: tr-tb-edit ; }
+  
+  
+  
+  .tr-tb-delete{ grid-area: tr-tb-delete; }
+
+ 
+
+.tr-tb-gname  { grid-area: tr-tb-gname ; }
+
+.tr-tb-gid{ grid-area: tr-tb-gid; }
+
+.tr-tb-members{ grid-area: tr-tb-members; }
+

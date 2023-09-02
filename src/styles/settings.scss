@@ -1,0 +1,25 @@
+@import "theme";
+
+.settings{
+  font-size: 13px;
+  padding: 30px 40px 75px;
+  .ui.label, input, select, .text{
+    font-size: 13px !important;
+  }
+  .search{
+    width: 275px;
+  }
+  button.right{
+    float: right;
+    margin-bottom: 20px;
+  }
+  &.discreet-subscribers{
+    font-size: 16px !important;
+    table{
+      width: 375px;
+    }
+  }
+}
+.static-field{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,8 @@
+node_modules
+Dockerfile
+logs
+*.tar
+*.zip
+*.tar.gz
+*.tar.xz
+.dockerignore

@@ -1,0 +1,172 @@
+/**
+ *  Component: Login
+ */
+
+import React from 'react'
+import PropTypes from 'prop-types'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { Image, Form, Button } from 'semantic-ui-react'
+
+import { endpoints } from '../../constants/endpoints'
+import store, { sagaMiddleware } from '../../store'
+import setupSocket from '../../sockets'
+import handleNewMessage from '../../sagas'
+import { authenticateUser } from '../../modules/auth'
+import { fetchAllLocations, fetchSnailTrails, fetchFences } from '../../modules/location'
+import { fetchStatuses, fetchGroupStatuses } from '../../modules/alarm'
+import { fetchTextMessages, fetchGroupTextMessages, fetchIndividualCalls, fetchGroupCalls } from '../../modules/communication'
+import { fetchAllSubscribers } from '../../modules/user'
+import { fetchAllStatusMessages } from '../../modules/statusMessage'
+import { fetchAllUserMessages, fetchAllGlobalMessages } from '../../modules/predefinedMessage'
+import { startTimer } from '../../modules/connection'
+import { showMessage } from '../../modules/alerts' 
+import '../../styles/login.scss'
+
+const propTypes = {
+  authenticateUser: PropTypes.func,
+  fetchAllSubscribers: PropTypes.func.isRequired,
+  fetchAllLocations: PropTypes.func.isRequired,
+  fetchSnailTrails: PropTypes.func.isRequired,
+  fetchFences: PropTypes.func.isRequired,
+  fetchTextMessages: PropTypes.func.isRequired,
+  fetchGroupTextMessages: PropTypes.func.isRequired,
+  fetchIndividualCalls: PropTypes.func.isRequired,
+  fetchGroupCalls: PropTypes.func.isRequired,
+  fetchStatuses: PropTypes.func.isRequired,
+  fetchGroupStatuses: PropTypes.func.isRequired,
+  fetchAllStatusMessages: PropTypes.func.isRequired,
+  fetchAllUserMessages: PropTypes.func.isRequired,
+  fetchAllGlobalMessages: PropTypes.func.isRequired,
+  startTimer: PropTypes.func.isRequired,
+  user: PropTypes.object,
+  showMessage: PropTypes.func.isRequired
+}
+
+class Login extends React.Component {
+
+  state = {
+    userName: '4000',
+    password: '4000'
+  }
+
+  componentDidMount = async () => {
+    /*
+    const {authenticateUser, showMessage} = this.props
+    const session = localStorage.getItem("session")
+    if (session) {
+      const res = await authenticateUser(null, JSON.parse(session))
+      showMessage(res)
+      if(res.type === 'success') {
+        this._loginSuccess()
+      }
+      return;
+    }
+    */
+  }
+
+  /**
+   *  onSubmit
+   *  call the action 'authenticateUser' to auth the user
+   */
+  onSubmit = async (e) => {
+    e.preventDefault()
+    const {authenticateUser, showMessage} = this.props
+    const {userName, password} = this.state
+    const res = await authenticateUser({userName, password})
+    showMessage(res)
+    if(res.type === 'success') {
+      this._loginSuccess()
+    }
+  }
+
+  _loginSuccess () {
+    const { fetchAllLocations, fetchSnailTrails, fetchFences, fetchTextMessages, fetchGroupTextMessages, fetchIndividualCalls, fetchGroupCalls, fetchStatuses, fetchGroupStatuses, fetchAllSubscribers, fetchAllStatusMessages, fetchAllUserMessages, fetchAllGlobalMessages, user, startTimer } = this.props
+
+    // socket connection
+    const socket = setupSocket(store.dispatch, user)
+    sagaMiddleware.run(handleNewMessage, { socket })
+
+    fetchAllLocations()
+    fetchSnailTrails(user)
+    fetchFences(user)
+    fetchTextMessages(sipPrivateId)
+    fetchGroupTextMessages(sipPrivateId)
+    fetchIndividualCalls(sipPrivateId)
+    fetchGroupCalls(sipPrivateId)
+    fetchStatuses(sipPrivateId)
+    fetchGroupStatuses(sipPrivateId)
+    fetchAllSubscribers()
+    fetchAllStatusMessages()
+    fetchAllUserMessages(user.user.id)
+    fetchAllGlobalMessages()
+    startTimer()
+
+    this.context.router.history.push('/location')
+  }
+
+  onChange = (e) => this.setState({ [e.target.name]: e.target.value })
+
+  render () {
+    const {userName, password} = this.state
+
+    return(
+      <div className='login'>
+        <div className='half left'>
+          <Image size='small' src='/logo.png' />
+        </div>
+        <div className='half right'>
+          <Form onSubmit={this.onSubmit}>
+            <div className='heading'>Login</div>
+            <Form.Field>
+              <label>Username</label>
+              <input onChange={this.onChange} value={userName} name="userName" placeholder='UserName' />
+            </Form.Field>
+            <Form.Field>
+              <label>Password</label>
+              <input onChange={this.onChange} value={password} type="password" name="password" placeholder='Password' />
+            </Form.Field>
+            <Button fluid type='submit'>Login</Button>
+            {
+              <div className='forgot'>
+                {/* todo */}
+                Having trouble logging in? <a target="_blank" href={endpoints.healthCheck}>Click here</a>
+              </div>
+            }
+          </Form>
+        </div>
+      </div>
+    )
+  }
+} 
+
+const mapStateToProps = state => ({
+  user:  state.auth.user
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  authenticateUser,
+  fetchAllSubscribers,
+  fetchAllLocations,
+  fetchSnailTrails,
+  fetchFences,
+  fetchStatuses,
+  fetchGroupStatuses,
+  fetchTextMessages,
+  fetchGroupTextMessages,
+  fetchIndividualCalls,
+  fetchGroupCalls,
+  fetchAllStatusMessages,
+  fetchAllUserMessages,
+  fetchAllGlobalMessages,
+  startTimer,
+  showMessage
+}, dispatch)
+
+Login.contextTypes = {
+  router: PropTypes.object.isRequired
+}
+
+Login.propTypes = propTypes
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

@@ -1,0 +1,31 @@
+@import "theme";
+
+#alarm{
+  padding: 30px 40px;
+  .action-items{
+
+  }
+}
+.ui.popup{
+  .call, .message{
+    font-size: 13px;
+    min-width: 100px;
+    h5{
+      font-weight: bold;
+    }
+    textarea{
+      width: 100%;
+    }
+    .ico{
+      cursor: pointer;
+      margin: 5px 0;
+      img.ui.image{
+        display: inline-block;
+        height: 20px;
+      }
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+}

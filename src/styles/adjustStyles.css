@@ -1,0 +1,230 @@
+*{
+  font-family: 'Muli';
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255,0.45)!important;
+  }
+
+/* Scroll bar */
+::-webkit-scrollbar {display:none;}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background-color: transparent;
+}
+
+/* dropdown item */
+.dropdown-item.inactive {
+    text-decoration: none!important;
+    color:#9e9ea386!important;
+  }
+
+.f-pop-text{
+    color: #1d2473;
+    font-size: 14px;
+    font-weight: 700;
+    margin:0px;
+    text-align: left; 
+}
+
+/* Train move direction  */
+.train-move{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .train-move-left{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 112px;
+  }
+
+  /* SDS display 3 lines */
+  .disp-sds {
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+ }
+
+ .white {
+   color: white;
+ }
+
+ .checkBox{
+  cursor: pointer;
+}
+
+.msgRead {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.unread {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+.al-center{
+  display: flex;
+  align-items: center;
+}
+
+/* QUICKACTION MODAL GRID */
+.title-modal {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "m-icon m-name";
+}
+
+.m-icon { grid-area: m-icon; }
+
+.m-name { grid-area: m-name; }
+
+/* Highlight card  */
+.highlight {
+  border:5px;
+  border-style: solid;
+  border-color: gray;
+}
+
+/* Highlight Patch call  */
+.highlightPatch {
+  border:5px;
+  border-style: solid;
+  border-color: orange;
+}
+
+/* Setting grid */
+.setting-row-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  padding: 2px 8px;
+  /* height: 36px; */
+  gap: 4px 8px;
+  color: black;
+  grid-template-areas: "set-text set-opt";
+}
+.set-text { grid-area: set-text; }
+.set-opt { grid-area: set-opt; }
+
+.cad-card-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr;
+  grid-template-rows: 0.8fr 0.8fr 0.48fr 1.2fr;
+  gap: 0px 0px;
+  color: #757575;
+  background-color: #baffb7;
+  height: 125px;
+  border-radius: 8px;
+  grid-template-areas: 
+  "cad-from         cad-from      cad-from"
+  "cad-to           cad-to        cad-to"
+  "cad-info         cad-info      cad-info"
+  "act-indv-discon  act-indv-hld  cad-accept";
+}
+
+.cad-from { grid-area: cad-from; align-items: center; display: flex; }
+.cad-to { grid-area: cad-to; align-items: center; display: flex; }
+.cad-info { grid-area: cad-info; }
+.cad-accept { grid-area: cad-accept; }
+
+.cad_grant{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border:0px!important;
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;
+}
+.cad_grant:hover{
+  border: 0px;
+  background-color: rgba(64,221,127,0.2);
+}
+.cad_grant:focus{
+  border: 0px!important;
+  background-color: rgba(64,221,127,0.2);
+}
+
+.dgna-clr{
+  display: inline-block;
+  background-color: rgb(91, 206, 91);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 3px 5px 0px 8px;
+}
+
+.dgna-clr.low{
+  background-color: #0080ff
+}
+.dgna-clr.med{
+  background-color: #18d26b
+}
+.dgna-clr.high{
+  background-color: #ff3f3f
+}
+
+/* USER LIST */
+.userlist-card {
+  display: grid;
+  grid-template-columns: 24px 1fr 32px 32px 32px;
+  grid-template-rows: auto;
+  gap: 8px 4px;
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  color: #121212 !important;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0px 15px 0px 12px;
+  grid-template-areas: ". . . . .";
+}
+
+.stn-tag.active{
+  background-color: rgb(44, 238, 37);
+  /* animation: 2s blink ease infinite */
+}
+.stn-tag.inactive{
+  background-color: red;
+}
+.stn-tag.alarm{
+  background-color: rgb(128,0,128);
+}
+.stn-tag.unknown{
+  background-color: gray;
+}
+.stn-tag.warning{
+  background-color: rgb(221, 148, 39);
+}
+/* .stn-tag.default{
+  background-color: red;
+} */
+
+.f-header-14b{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'muli';
+}
+.f-detail-14{
+  font-size: 12px;
+  font-family: 'muli';
+}
+.partition {
+  background-color: #aeaeae;
+  height: 1px;
+  width: 100%;
+  margin:5px 0px 5px 0px
+}

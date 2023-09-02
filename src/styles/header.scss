@@ -1,0 +1,51 @@
+@import "theme";
+
+.header{
+  .ui.label{
+    border-radius: 3em;
+  }
+  a{
+    color: initial !important;
+    padding-bottom: 22px !important;
+    &.active{
+      color: $active-primary !important;
+      border-color: $active-primary !important;
+      border-width: 4px !important;
+    }
+    &.item{
+      font-size: 18px;
+    }
+    &.fitted{
+      padding: 10px 20px !important;
+      margin-right: auto !important;
+      &.active{
+        border-bottom: 2px solid #dfe0e0 !important;
+      }
+    }
+    img{
+      width: 30px !important;
+    }
+  }
+  .clock{
+    font-family: 'Orbitron', sans-serif;
+    padding-right: 0 !important;
+    min-width: 110px;
+    max-width: 110px;
+    font-size: 20px;
+    color: #444 !important;
+  }
+  .dropdown{
+    font-size: 13px;
+    .subscriber{
+      padding: 14px 14px 8px 14px;
+      color: #999;
+    }
+    i.icon{
+      font-size: 32px;
+    }
+  }
+  .ui.pointing.dropdown>.menu:after{
+    left: initial;
+    right: 18px;
+  }
+}

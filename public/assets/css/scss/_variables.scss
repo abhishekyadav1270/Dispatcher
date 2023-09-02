@@ -1,0 +1,214 @@
+// <== Colours Starts ==>
+$white: #ffffff;
+$black: #282828;
+$muted: #8A98AC;
+$success: #2e9e79;
+$danger: #e0003c;
+$warning: #ff9b54;
+
+$el-m-deep: #059d98;
+$el-m-dark: #ffb01f;
+$el-m-mild: #3dccc7;
+$el-m-light: #68d8d6;
+$el-m-muted: #9ceaef;
+
+$el-b-deep: #53d2cf;
+$el-b-dark: #ffc14d ;
+$el-b-mild: #ffc14d;
+$el-b-light: #bafaf7;
+$el-b-muted: #c4fff9;
+
+$el-c-deep: #060706;
+$el-c-dark: #e7efc5;
+$el-c-mild: #ebf1cf;
+$el-c-light: #ebf1cf;
+$el-c-muted: #ebf1cf;
+
+$popover-dark : #accbe1;
+$popover-mild : #bdd8ea;
+$popover-light : #cee5f2;
+
+$ptt-green : #ff9d2c;
+
+$orange : #ffb01f;
+$light-orange : #ffc14d;
+$bg-dark : #121212;
+$bg-mild : rgba(255,255,255,0.07) ;
+$bg-light : #414141 ;
+
+$wrap :#616162;
+
+$form-dark : #8a817c;
+$form-mild : #a39d97;
+$form-light: #a39d97;
+$form-bright : #c2beb8;
+
+$allbtn: (
+    "primary" : $orange,
+    "success" : $success,
+    "danger": $danger,
+    "warning": $warning,
+    "el-m-deep": $el-m-deep,
+    "el-m-dark": $el-m-dark,
+    "el-m-mild": $el-m-mild,
+    "el-m-light": $el-m-light,
+    "el-m-muted": $el-m-muted,
+    "el-b-deep": $el-b-deep,
+    "el-b-dark": $el-b-dark,
+    "el-b-mild": $el-b-mild,
+    "el-b-light": $el-b-light,
+    "el-b-muted": $el-b-muted,
+    "el-c-deep": $el-c-deep,
+    "el-c-dark": $el-c-dark,
+    "el-c-mild": $el-c-mild,
+    "el-c-light": $el-c-light,
+    "el-c-muted": $el-c-muted,
+    "quick-link" : $light-orange
+    );
+
+
+// <== Colours Ends ==>
+
+// Font Weights
+$f-exlight : 100;
+$f-light : 200;
+$f-reg  : 300;
+$f-semi  :400;
+$f-med  : 500;
+$f-bold  : 600;
+$f-bolder : 700;
+$f-exbold : 800;
+
+// Line Height
+$line-height-115 : 115%;
+$line-height-125 : 125%;
+$line-height-135 : 135%;
+$line-height-145 : 145%;
+$line-height-160 : 160%;
+$line-height-180 : 180%;
+$line-height-200 : 200%;
+
+//sizes
+$s1 : 0.1rem;
+$s2 : 0.2rem;
+$s3 : 0.3rem;
+$s4 : 0.4rem;
+$s5 : 0.5rem;
+$s6 : 0.6rem;
+$s7 : 0.7rem;
+$s8 : 0.8rem;
+$s9 : 0.9rem;
+$s10 : 1.0rem;
+$s11 : 1.1rem;
+$s12 : 1.2rem;
+$s13 : 1.3rem;
+$s14 : 1.4rem;
+$s15 : 1.5rem;
+$s16 : 1.6rem;
+$s17 : 1.7rem;
+$s18 : 1.8rem;
+$s19 : 1.9rem;
+$s20 : 2.0rem;
+$s21 : 2.1rem;
+$s22 : 2.2rem;
+$s23 : 2.3rem;
+$s24 : 2.4rem;
+$s25 : 2.5rem;
+$s26 : 2.6rem;
+$s27 : 2.7rem;
+$s28 : 2.8rem;
+$s29 : 2.9rem;
+$s30 : 3.0rem;
+$s31 : 3.1rem;
+$s32 : 3.2rem;
+$s33 : 3.3rem;
+$s34 : 3.4rem;
+$s35 : 3.5rem;
+$s36 : 3.6rem;
+$s37 : 3.7rem;
+$s38 : 3.8rem;
+$s39 : 3.9rem;
+$s40 : 4.0rem;
+$s41 : 4.1rem;
+$s42 : 4.2rem;
+$s43 : 4.3rem;
+$s44 : 4.4rem;
+$s45 : 4.5rem;
+$s46 : 4.6rem;
+$s47 : 4.7rem;
+$s48 : 4.8rem;
+$s49 : 4.9rem;
+$s50 : 5.0rem;
+$s51 : 5.1rem;
+$s52 : 5.2rem;
+$s53 : 5.3rem;
+$s54 : 5.4rem;
+$s55 : 5.5rem;
+$s56 : 5.6rem;
+$s57 : 5.7rem;
+$s58 : 5.8rem;
+$s59 : 5.9rem;
+$s60 : 6.0rem;
+$s61 : 6.1rem;
+$s62 : 6.2rem;
+$s63 : 6.3rem;
+$s64 : 6.4rem;
+$s65 : 6.5rem;
+$s66 : 6.6rem;
+$s67 : 6.7rem;
+$s68 : 6.8rem;
+$s69 : 6.9rem;
+$s70 : 7.0rem;
+$s71 : 7.1rem;
+$s72 : 7.2rem;
+$s73 : 7.3rem;
+$s74 : 7.4rem;
+$s75 : 7.5rem;
+$s76 : 7.6rem;
+$s77 : 7.7rem;
+$s78 : 7.8rem;
+$s79 : 7.9rem;
+$s80 : 8.0rem;
+$s81 : 8.1rem;
+$s82 : 8.2rem;
+$s83 : 8.3rem;
+$s84 : 8.4rem;
+$s85 : 8.5rem;
+$s86 : 8.6rem;
+$s87 : 8.7rem;
+$s88 : 8.8rem;
+$s89 : 8.9rem;
+$s90 : 9.0rem;
+$s91 : 9.1rem;
+$s92 : 9.2rem;
+$s93 : 9.3rem;
+$s94 : 9.4rem;
+$s95 : 9.5rem;
+$s96 : 9.6rem;
+$s97 : 9.7rem;
+$s98 : 9.8rem;
+$s99 : 9.9rem;
+$s100 : 10rem;
+
+
+// Font Sizes
+$f-10 : $s10;
+$f-11 : $s11;
+$f-12 : $s12;
+$f-13 : $s13;
+$f-14 : $s14;
+$f-16 : $s16;
+$f-18 : $s18;
+$f-20 : $s20;
+$f-22 : $s22;
+$f-24 : $s24;
+$f-28 : $s28;
+$f-32 : $s32;
+$f-36 : $s36;
+$f-40 : $s40;
+$f-44 : $s44;
+$f-48 : $s48;
+$f-56 : $s56;
+
+// <== Margins ==>
+

@@ -1,0 +1,95 @@
+/* //New
+// .inc-card-grid{
+//     background-color: #fbc6c6!important;
+//     grid-template-columns: 0.35fr 1fr 0.41fr!important;
+//   } */
+  .inc-card-grid-emg {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr 0.35fr;
+    grid-template-rows: 0.9fr 1fr;
+    gap: 1px 1px;
+    /* height: 52px!important; */
+    background-color: #fbc6c6!important;
+    color: #757575;
+    border-radius: 8px;
+    grid-template-areas: "inc-discon inc-header inc-ptt" "inc-discon inc-name inc-ptt";
+  }
+  
+  .emergency-red{
+    background-color: #fbc6c6;
+  }
+  
+  /* .emergency-red:hover{
+    background-color: #f67a7a;
+  } */
+  
+  .emergency-ptt{
+  background-color:#cf3741;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  }
+  
+  .emergency-ptt:hover{
+  background-color:#ac1721;
+  }
+  
+  .emergency-ptt.active{
+  background-color:#ac1721;
+  }
+  .emergency-ptt.inactive{
+    background-color: #757575;
+    border : 0px;
+  }
+  .emergency-ptt.req{
+    background-color: #FF9162;
+    border : 0px;
+  }
+
+  .emergency-ack{
+    background-color:#ecb80b;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .emergency-ack:hover{
+    background-color:#f5d774;
+  }
+
+  /* //Emergency call card
+  // .act-card-grid-emg {
+  //   background-color: #fbc6c6 !important;
+  // } */
+  .act-card-grid-emg {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr 0.75fr 0.75fr;
+    grid-template-rows: 0.8fr 0.64fr 0.64fr 1.2fr;
+    gap: 0px 0px;
+    height: 117px;
+    width: inherit;
+    border-radius: 8px;
+    grid-template-areas: 
+    "act-name   act-name    act-checkbox    act-ptt"
+    "act-call   act-call    act-icon    act-ptt" 
+    "act-status act-status  act-status  act-ptt" 
+    "act-discon act-hld     act-mut     act-ptt";
+  }
+
+  .act-ack-card-grid-emg {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr 0.75fr 0.65fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px 0px;
+    height: 73px;
+    border-radius: 8px;
+    grid-template-areas: 
+    "act-name   act-name    act-id    act-ack"
+    "act-call   act-call    act-icon  act-ack"  
+  }
+
+  .act-ack {
+    grid-area: act-ack
+  }

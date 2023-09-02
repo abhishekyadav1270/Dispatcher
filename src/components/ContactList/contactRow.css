@@ -1,0 +1,54 @@
+
+.contactView{
+    flex-direction: row;
+    display: flex;
+}
+.headerText{
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+    margin: 0px;
+    text-align: left;
+    font-family: 'Muli';
+}
+
+.textVal{
+    font-size: 12px;
+    color: #aeaeae;
+    font-weight: 700;
+    margin: 0px;
+    text-align: left;
+    font-family: 'Muli';
+}
+
+.subcriber-details-row-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 20px;
+    gap: 0px 2px;
+    height: 30px;
+    border-bottom: 0.5px solid rgba(34,36,38,.15);
+    /* // border-color: rgb(255,255,255,0.1);
+    // padding: 8px 4px 8px 8px; */
+    margin-top: 5px;
+    /* // color: white; */
+    align-content:center;
+    grid-template-areas: "d1 d2";
+}
+.d1 { 
+    grid-area: d1;
+    align-self: self-start;
+    font-family: 'Muli';
+}
+
+.d2 { 
+    grid-area: d2;
+    font-family: 'Muli';
+}
+
+.f-text-header-18b{
+    font-size: 18px;
+    font-weight: 1000;
+    font-family: 'muli';
+    margin-top: 10px;
+}

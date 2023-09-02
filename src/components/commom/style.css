@@ -1,0 +1,109 @@
+/* Splashscreen starts here */
+.backgsplash{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 500;
+    /* background-color: rgba(0,0,0,0.4); */
+    /* background-image: url('https://localhost:3000/assets/images/login_bg.svg'); */
+    background-image: url('../../../public/assets/images/login_bg.svg');
+}
+
+.splash-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:25vh;
+    opacity: 1!important;
+}
+
+.splash-img-style{
+    width:48vw;
+    -webkit-box-shadow: 0px 5px 20px 0px rgb(75, 75, 75);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(136,136,136,1);
+    box-shadow: 0px 5px 20px 0px rgba(136,136,136,1);
+    opacity: 1!important;
+
+}
+
+#wave {
+	position: absolute;
+    text-align: center;
+    width: 180px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+
+}
+	.dotanim {
+		display:inline-block;
+		width:16px;
+		height:16px;
+		border-radius:50%;
+		margin-right:4px;
+		background:#FFBC1F!important;
+		animation: wave 1.3s linear infinite;
+    }
+		:nth-child(2) {
+			animation-delay: -1.1s;
+		}
+
+		:nth-child(3) {
+			animation-delay: -0.9s;
+        }
+        
+        :nth-child(4) {
+			animation-delay: -0.9s;
+        }
+        :nth-child(5) {
+			animation-delay: -0.9s;
+		}
+
+
+@keyframes wave {
+	0%, 60%, 100% {
+		transform: initial;
+	}
+
+	30% {
+		transform: translateY(-15px);
+	}
+}
+/* Spashscreen ends here */
+
+/* ContextMenu */
+.context-submenu{
+    padding: 2px 4px;
+}
+.context-menu-item{
+    padding: 2px 4px;
+}
+.context-menu-item:hover{
+    text-decoration:none;
+    color:#f5f6f6;
+    background-color:#9e9ea386;
+    border-radius: 5px;
+}
+/* Context Menu with custom item */
+.context-menu{
+  /* background-color: #080A1C!important; */
+  padding: 4px;
+  border-radius: 8px;
+}
+.context-submenu1{
+  padding: 2px 0px;
+}
+
+.context-item1{
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.context-item1:hover{
+  text-decoration:none;
+  color:#f5f6f6;
+  background-color:#9e9ea386
+}
+  

@@ -1,0 +1,3 @@
+[submodule "src/MCXclient"]
+	path = src/MCXclient
+	url = https://github.com/Consort-Digital/MCXclient.git
